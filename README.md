@@ -1,16 +1,29 @@
-# listadetarefas
+# APP LISTA DE TAREFAS PARA TESTAR E APRENDER FLUTTER USANDO O CURSO UDEMY DANIEL CIOFFI
 
-A new Flutter project.
+    [Curso Udemy Daniel Cioffi](https://www.udemy.com/course/curso-completo-flutter-app-android-ios/learn/lecture/11060130#questions)
 
-## Getting Started
+### APRENDIZADOS 
+    * WIDGETS 
+        * EXPANDED
+        * CONTAINER
+        * TEXTFIELD
+        * RAISEDBUTTON
+        * LISTVIEW.BUILDER
+        * CHECKBOXLISTTILE
+        * TEXTEDITINGCONTROLLER   
+        * SNACKBAR 
+    * FUNCIONALIDADES
+        * CONSUMO API 
+        * SETSTATE 
+        * LIST
+        * MAP
+        
 
-This project is a starting point for a Flutter application.
+### CONTATOS 
 
-A few resources to get you started if this is your first Flutter project:
+    * aroldo.esmerio@gmail.com 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### MAIORES INFORMAÇOES 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    * Este app foi criado para fins de estudo tanto de Flutter quanto de Git 
+    * Estou disponível para criticas construtivas e aprendizado
