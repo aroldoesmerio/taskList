@@ -1,6 +1,6 @@
 # APP LISTA DE TAREFAS PARA TESTAR E APRENDER FLUTTER USANDO O CURSO UDEMY DANIEL CIOFFI
 
-    [Curso Udemy Daniel Cioffi](https://www.udemy.com/course/curso-completo-flutter-app-android-ios/learn/lecture/11060130#questions)
+    <https://www.udemy.com/course/curso-completo-flutter-app-android-ios/learn/lecture/11060130#questions>
 
 ### APRENDIZADOS 
     * WIDGETS 
