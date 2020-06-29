@@ -30,11 +30,15 @@ class _MyHomeState extends State<MyHome> {
   @override
   void initState() {
     super.initState();
-    setState(() {
-      _readData().then((data) {
-        _toDoList = json.decode(data);
-      });
-    });
+    setState(
+      () {
+        _readData().then(
+          (data) {
+            _toDoList = json.decode(data);
+          },
+        );
+      },
+    );
   }
 
   void addToDo() {
