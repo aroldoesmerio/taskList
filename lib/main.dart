@@ -27,6 +27,16 @@ class _MyHomeState extends State<MyHome> {
 
   List _toDoList = [];
 
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      _readData().then((data) {
+        _toDoList = json.decode(data);
+      });
+    });
+  }
+
   void addToDo() {
     setState(() {
       Map<String, dynamic> newToDo = Map();
@@ -34,6 +44,7 @@ class _MyHomeState extends State<MyHome> {
       _toDoController.text = "";
       newToDo["ok"] = false;
       _toDoList.add(newToDo);
+      _saveData();
     });
   }
 
@@ -82,11 +93,11 @@ class _MyHomeState extends State<MyHome> {
                     child: Icon(
                         _toDoList[index]["ok"] ? Icons.check : Icons.error),
                   ),
-                  onChanged: (c){
+                  onChanged: (c) {
                     setState(() {
-                       _toDoList[index]["ok"] = c;
+                      _toDoList[index]["ok"] = c;
+                      _saveData();
                     });
-                   
                   },
                 );
               },
@@ -151,5 +162,33 @@ class _MyHomeState extends State<MyHome> {
             return null; 
         }
     }
-5 - 
+5 - Criar o initState para persistir os dados
+class _MyHomeState extends State<MyHome> {
+  final _toDoController = TextEditingController();
+
+  List _toDoList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      _readData().then((data) {
+        _toDoList = json.decode(data);
+      });
+    });
+  }
+
+  6 - Método _addToDo, Logo abaixo do initstate 
+
+     void addToDo() {
+    setState(() {
+      Map<String, dynamic> newToDo = Map();
+      newToDo["title"] = _toDoController.text;
+      _toDoController.text = "";
+      newToDo["ok"] = false;
+      _toDoList.add(newToDo);
+      _saveData();
+    });
+  }
+
 */
